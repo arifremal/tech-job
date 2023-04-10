@@ -1,10 +1,11 @@
 import React from 'react';
 import { ShoppingCartIcon ,MapPinIcon,CurrencyDollarIcon } from "@heroicons/react/24/solid";
+import { Link } from 'react-router-dom';
 
 const Singlejob = ({job}) => {
     return (
         <div className=' bg-white rounded-md p-3 ' > 
-          <img src={job.logo} alt="" className='w-32 h-24 p-3'  />
+          <img src={job.logo} alt="" className='w-32  p-3'  />
           <p className='text-black font-semibold'>{job.title}</p>
           <small>{job.company}</small>
           <div>
@@ -13,7 +14,7 @@ const Singlejob = ({job}) => {
           </div>
           <p className='inline-block'> <MapPinIcon className="w-5 text-purple-400 inline-block " /> {job.location}</p>
           <p className='inline-block m-3'><CurrencyDollarIcon className="w-5 text-purple-400 inline-block " />{job.salary}</p><br/>
-          <button>View Details</button>
+          <Link to="/details"><button>View Details</button></Link>
           </div>
     );
 };
