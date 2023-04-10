@@ -18,7 +18,8 @@ const JobCategory = () => {
 
            <div className='grid gap-6  lg:grid-cols-4 sm:grid-cols-1 p-10'>
             {
-                jobs.map(job => <div className='bg-purple-100 p-14 rounded-md text-black'>
+                jobs.map(job => <div className='bg-purple-100 p-14 rounded-md text-black '>
+                    <img className='w-10' src={job.img} alt="" />
                     <p className='font-bold'>{job.Department}</p>
                     <p>{job.available}</p>
                 </div>  )

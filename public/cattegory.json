@@ -1,17 +1,17 @@
 [
-  {
+  { "img":"https://cdn-icons-png.flaticon.com/512/9366/9366470.png",
     "Department": "Human Resource",
     "available": "300 Jobs Available"
   },
-  {
+  { "img":"https://cdn-icons-png.flaticon.com/512/7953/7953939.png",
     "Department": "Mananger",
     "available": "100 Jobs Available"
   },
-  {
+  {"img":"https://cdn-icons-png.flaticon.com/512/8353/8353424.png",
     "Department": "Designer",
     "available": "320 Jobs Available"
   },
-  {
+  { "img":"https://toppng.com/uploads/preview/icon-job-vacancies-hire-icon-11553457632xr0z5detuh.png",
     "Department": "Developer",
     "available": "30 Jobs Available"
   }
