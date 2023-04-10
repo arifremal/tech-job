@@ -1,0 +1,18 @@
+[
+  {
+    "Department": "Human Resource",
+    "available": "300 Jobs Available"
+  },
+  {
+    "Department": "Mananger",
+    "available": "100 Jobs Available"
+  },
+  {
+    "Department": "Designer",
+    "available": "320 Jobs Available"
+  },
+  {
+    "Department": "Developer",
+    "available": "30 Jobs Available"
+  }
+]
