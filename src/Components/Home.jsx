@@ -7,7 +7,7 @@ import Singlejob from "./Singlejob";
 
 const Home = () => {
 const jobs = useLoaderData()
-console.log(jobs);
+// console.log(jobs);
   return (
     <section>
       <div className="my-container flex flex-col items-center justify-between lg:flex-row">
