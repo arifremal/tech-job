@@ -14,7 +14,7 @@ const Singlejob = ({job}) => {
           </div>
           <p className='inline-block'> <MapPinIcon className="w-5 text-purple-400 inline-block " /> {job.location}</p>
           <p className='inline-block m-3'><CurrencyDollarIcon className="w-5 text-purple-400 inline-block " />{job.salary}</p><br/>
-          <Link to={`details/${job._id}`}><button>View Details</button></Link>
+          <Link to={`details/${job.id}`}><button>View Details</button></Link>
           </div>
     );
 };

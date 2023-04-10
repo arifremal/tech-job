@@ -11,7 +11,7 @@ const App = () => {
     <div>
       <Header></Header>
 
-       <Outlet></Outlet>
+       <div className='md:min-h-[calc(100vh-161px)]'><Outlet></Outlet></div>
 
        <Footer></Footer>
        
