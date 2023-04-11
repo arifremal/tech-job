@@ -37,7 +37,7 @@ const Appliedcard = ({ job }) => {
                 <MapPinIcon className="w-5 text-purple-400 inline-block " />{" "}
                 {location}
               </p>
-              <p className=" py-1">
+              <p className=" inline-block py-1">
                 <CurrencyDollarIcon className="w-5 text-purple-400 inline-block " />
                 {salary}
               </p>
