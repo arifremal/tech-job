@@ -20,7 +20,7 @@ const Header = () => {
         </Link>
 
         {/* Nav Items Section */}
-        <ul className="items-center hidden space-x-8 lg:flex">
+        <ul className="items-center hidden space-x-8 lg:flex mx-auto ">
           <li>
             <NavLink
               to="/"
@@ -53,8 +53,8 @@ const Header = () => {
               Blog
             </NavLink>
           </li>
-          <button>Star Applying</button>
         </ul>
+          <button className="sm:display-none">Star Applying</button>
         {/* Mobile Navbar Section */}
         <div className="lg:hidden">
           {/* Dropdown Open Button */}

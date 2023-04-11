@@ -7,7 +7,7 @@ const AppliedJobs = () => {
   const { cartArray } = useLoaderData();
 
   return (
-    <div className=" flex min-h-screen items-start justify-center bg-gray-100 text-gray-900">
+    <div className=" flex min-h-screen items-start justify-center text-gray-900">
       <div className="flex flex-col max-w-3xl p-6 space-y-4 sm:p-10">
         <h2 className="text-xl font-semibold" > {cartArray.length ? 'Applied Job':'Not Applied Yet'}</h2>
 

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 
 const Singlejob = ({job}) => {
+ 
 
     return (
         <div className=' bg-white rounded-md p-4 flex flex-col justify-center align-middle ' > 
