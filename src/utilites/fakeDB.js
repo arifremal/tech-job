@@ -16,4 +16,13 @@ if(totalApplied){
 localStorage.setItem('Applied Job',JSON.stringify(applyJob))
 }
 
-export{addToDb}
+const getStoredJobs =()=>{
+    let applyJob={}
+    const storedJob=localStorage.getItem('Applied Job')
+if(storedJob){
+    applyJob=JSON.parse(storedJob)
+} 
+return applyJob
+}
+
+export{addToDb ,getStoredJobs}
