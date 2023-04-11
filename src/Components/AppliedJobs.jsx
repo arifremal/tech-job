@@ -1,31 +1,27 @@
 import React, { useEffect, useState } from "react";
 import { getStoredJobs } from "../utilites/fakeDB";
 import { useLoaderData } from "react-router-dom";
+import Appliedcard from "./Appliedcard";
 
 const AppliedJobs = () => {
-  const [job, setJob] = useState([]);
-
-  const jData = useLoaderData();
-
-  useEffect(() => {
-    const savedJobData = getStoredJobs();
-    let newArr = [];
-
-    for (const id in savedJobData) {
-      const foundJob = jData.find((job) => job.id === id);
-      if (foundJob) {
-        // cartD.push(foundJob)
-        newArr.push(foundJob);
-      }
-    }
-    setJob(newArr);
-  }, []);
-
-  console.log(job);
+  const { cartArray } = useLoaderData();
 
   return (
-    <div>
-      <h1>applied jobs</h1>
+    <div className=" flex min-h-screen items-start justify-center bg-gray-100 text-gray-900">
+      <div className="flex flex-col max-w-3xl p-6 space-y-4 sm:p-10">
+        <h2 className="text-xl font-semibold" > {cartArray.length ? 'Applied Job':'Not Applied Yet'}</h2>
+
+
+    <ul className=" flex flex-col divide-y divide-purple-300">
+        {cartArray.map(job => <Appliedcard key={job.id}
+        
+        job={job}
+        >
+
+        </Appliedcard> )}
+    </ul>
+
+      </div>
     </div>
   );
 };
